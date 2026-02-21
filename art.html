@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Isha's Art Gallery</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: rgb(192, 237, 255);
+                padding: 40px;
+                text-align: center;
+            }
+
+            h1 {
+                color: rgb(23, 146, 218);
+                margin-bottom: 30px;
+            }
+
+            a {
+                color:  rgb(23, 146, 218);
+            }
+
+            .gallery-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 15px;
+                max-width: 900px;
+                margin: auto;
+            }
+
+            .gallery-grid img {
+                width: 100%;
+                border-radius: 12px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .gallery-grid img:hover {
+                transform: scale(1.05);
+            }
+
+            .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.8);
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            .overlay img {
+                max-width: 80%;
+                max-height: 80%;
+                border-radius: 12px;
+            }
+        </style>
+    </head>
+    <div class="overlay" id="overlay">
+        <img id="overlay-img" src="" alt="Full view">
+    </div>
+    <body>
+        <a href="index.html">← Back to Portfolio</a>
+        <h1>My Art Gallery</h1>
+        <div class="gallery-grid">
+            <img src="images/Arriety.jpg" alt="Arriety">
+            <img src="images/Jiji.jpg" alt="Jiji">
+            <img src="images/Kiki.jpg" alt="Kiki">
+            <img src="images/Spirited_away.png" alt="Spirited Away">
+            <img src="images/Spirited_away1.jpg" alt="Spirited Away 1">
+            <img src="images/Totoro0.jpg" alt="Totoro">
+            <img src="images/Totoro1.JPG" alt="Totoro 1">
+            <img src="images/Train_ghibli.JPEG" alt="Train Ghibli">
+            <img src="images/Turnip.png" alt="Turnip">
+            <img src="images/WhisperOfHeart.png" alt="Whisper of Heart">
+        </div>
+        <script src="art.js"></script>
+    </body>
+</html>
