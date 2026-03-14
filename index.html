@@ -3,42 +3,67 @@
     <head>
         <title>Isha Rastogi</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Gaegu&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="header">
-            <h1>Isha Rastogi</h1>
-            <p>Engineer · Artist · Gamer · Cinephile</p>
-        </div>
-
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Hi! I'm Isha, a creative soul from India who loves making art, exploring virtual worlds through gaming, and getting lost in great films. I'm currently learning web development and building this space to share my journey!</p>
-        </section>
-
-        <div class="interests">
-
-            <a href="gaming.html" style="text-decoration: none; color:inherit;">
-                <div class="box">
-                    <h2>Gaming</h2>
-                    <p>I love cozy indie and puzzle games.</p>
-                </div>
-            </a>
-            
-            <div class="box">
-                <h2>Movies</h2>
-                <p>I enjoy thrillers and animations.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+            <filter id="grain">
+                <feTurbulence 
+                    type="fractalNoise" 
+                    baseFrequency="0.65" 
+                    numOctaves="3" 
+                    stitchTiles="stitch"/>
+                <feColorMatrix type="saturate" values="0"/>
+            </filter>
+        </svg>
+        
+        <div class="sketchbook-wrapper">
+            <img src="asset_imgs/Sketchbook1.png" alt="Sketchbook" class="sketchbook">
+            <div class="header">
+                <h1>Isha Rastogi</h1>
+                <p>Engineer · Artist · Gamer · Cinephile</p>
             </div>
-            
-            
-            <a href="art.html" style="text-decoration: none; color:inherit;">
-                <div class="box">
-                    <h2>Art</h2>
-                    <p>I create digital and pencil art.</p>
-                </div>
-            </a>
 
+            <div class="about">
+                <div class="part">
+                    <h2>About Me</h2>
+                    <p>Hi! I'm Isha, a creative soul from India who loves making art, exploring virtual worlds through gaming, and getting lost in great films. I'm currently learning web development and building this space to share my journey!</p>
+                </div>
+
+                <div class="part">
+                    <img src="/asset_imgs/self-1.png" >
+                </div>
+            </div>
+
+            <div class="interests">
+
+                <a href="gaming.html" style="text-decoration: none; color:inherit;">
+                    <div class="box">
+                        <h2>Gaming</h2>
+                        <p>I love cozy indie and puzzle games.</p>
+                    </div>
+                </a>
+                
+                <a href="movies.html" style="text-decoration: none; color:inherit;">
+                    <div class="box">
+                        <h2>Movies</h2>
+                        <p>I enjoy thrillers and animations.</p>
+                    </div>
+                </a>
+                
+                
+                <a href="art.html" style="text-decoration: none; color:inherit;">
+                    <div class="box">
+                        <h2>Art</h2>
+                        <p>I create digital and pencil art.</p>
+                    </div>
+                </a>
+
+            </div>
         </div>
+        <div class="grain-overlay"></div>
+        <div class="bg-overlay"></div>
         <footer>
             <p>Made with ❤️ by Isha Rastogi · <a href="https://github.com/isha252001">GitHub</a></p>
         </footer>
